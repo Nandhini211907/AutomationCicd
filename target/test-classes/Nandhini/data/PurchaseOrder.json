@@ -1,0 +1,13 @@
+[
+	{
+	"email" : "nandhini@test.com",
+	"password":	"Test@1234",
+	"name": "ADIDAS ORIGINAL"
+	
+	},
+	{
+		"email" : "nandhini@tst.com",
+			"password":	"Test@2119",
+			"name": "ADIDAS ORIGINAL"
+	}
+]
