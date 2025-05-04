@@ -35,7 +35,7 @@ public class CartCheck extends AbstractComponents{
 	By tnx = By.cssSelector(".hero-primary");
 	@FindBy(css=".hero-primary")
 	WebElement Thanks;
-	@FindBy(css=".em-spacer-1 label[class=\'ng-star-inserted\']")
+	@FindBy(css=".em-spacer-1 label[class='ng-star-inserted']")
 	WebElement how;
 	
 	

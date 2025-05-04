@@ -1,47 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-30T15:50:50 IST" name="Default suite" finished-at="2025-04-30T15:50:59 IST" duration-ms="9449">
+  <suite started-at="2025-05-04T13:09:27 IST" name="Default suite" finished-at="2025-05-04T13:09:38 IST" duration-ms="10218">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNgTestRunner@399c4be1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="Purchase">
+        <method signature="Alone.submitOrder(java.util.HashMap)[pri:0, instance:Nandhini.Tests.Alone@752325ad]" name="submitOrder" class="Nandhini.Tests.Alone"/>
+      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2025-04-30T15:50:50 IST" name="Default test" finished-at="2025-04-30T15:50:59 IST" duration-ms="9449">
-      <class name="Cucumber.TestNgTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestNgTestRunner@399c4be1]" started-at="2025-04-30T15:50:50 IST" name="setUpClass" finished-at="2025-04-30T15:50:50 IST" duration-ms="645" status="PASS">
+    <test started-at="2025-05-04T13:09:27 IST" name="Default test" finished-at="2025-05-04T13:09:38 IST" duration-ms="10218">
+      <class name="Nandhini.Tests.Alone">
+        <test-method is-config="true" signature="landing()[pri:0, instance:Nandhini.Tests.Alone@752325ad]" started-at="2025-05-04T13:09:28 IST" name="landing" finished-at="2025-05-04T13:09:35 IST" duration-ms="7111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landing -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Nandhini.Tests.Alone@752325ad]" started-at="2025-05-04T13:09:35 IST" name="submitOrder" data-provider="getdata" finished-at="2025-05-04T13:09:35 IST" duration-ms="73" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c05ff9d]]>
+                <![CDATA[{name=ADIDAS ORIGINAL, password=Test@1234, email=nandhini@test.com}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The method goTocart() from the type AbstractComponents refers to the missing type CartCheck
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method goTocart() from the type AbstractComponents refers to the missing type CartCheck
+
+at Nandhini.Tests.Alone.submitOrder(Alone.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNgTestRunner@399c4be1]" started-at="2025-04-30T15:50:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-30T15:50:59 IST" duration-ms="8685" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Nandhini.Tests.Alone@752325ad]" started-at="2025-05-04T13:09:35 IST" name="close" finished-at="2025-05-04T13:09:35 IST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="landing()[pri:0, instance:Nandhini.Tests.Alone@752325ad]" started-at="2025-05-04T13:09:35 IST" name="landing" finished-at="2025-05-04T13:09:37 IST" duration-ms="2134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landing -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Nandhini.Tests.Alone@752325ad]" started-at="2025-05-04T13:09:37 IST" name="submitOrder" data-provider="getdata" finished-at="2025-05-04T13:09:37 IST" duration-ms="17" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Positive Test of Purchasing order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the Order"]]>
+                <![CDATA[{name=ADIDAS ORIGINAL, password=Test@2119, email=nandhini@tst.com}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The method goTocart() from the type AbstractComponents refers to the missing type CartCheck
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method goTocart() from the type AbstractComponents refers to the missing type CartCheck
+
+at Nandhini.Tests.Alone.submitOrder(Alone.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNgTestRunner@399c4be1]" started-at="2025-04-30T15:50:59 IST" name="tearDownClass" finished-at="2025-04-30T15:50:59 IST" duration-ms="48" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Nandhini.Tests.Alone@752325ad]" started-at="2025-05-04T13:09:37 IST" name="close" finished-at="2025-05-04T13:09:38 IST" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- Cucumber.TestNgTestRunner -->
+        </test-method> <!-- close -->
+        <test-method signature="ordercheck(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Nandhini.Tests.Alone@752325ad]" started-at="2025-05-04T13:09:38 IST" name="ordercheck" finished-at="2025-05-04T13:09:38 IST" depends-on-methods="Nandhini.Tests.Alone.submitOrder" duration-ms="2" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Nandhini.Tests.Alone.ordercheck() on instance Nandhini.Tests.Alone@752325ad depends on not successfully finished methods 
+[Nandhini.Tests.Alone.submitOrder() on instance Nandhini.Tests.Alone@752325ad]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Nandhini.Tests.Alone.ordercheck() on instance Nandhini.Tests.Alone@752325ad depends on not successfully finished methods 
+[Nandhini.Tests.Alone.submitOrder() on instance Nandhini.Tests.Alone@752325ad]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ordercheck -->
+      </class> <!-- Nandhini.Tests.Alone -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
