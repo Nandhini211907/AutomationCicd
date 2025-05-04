@@ -48,6 +48,7 @@ public class Alone extends BaseTest {
     	ProductCatalogue prodcat = landingpage.login(email,password);
     	OrderValidate ordervalidate = prodcat.Order();
     	Assert.assertTrue(ordervalidate.validate(name));
+    	System.out.println("Hello");
     			}
   
 
